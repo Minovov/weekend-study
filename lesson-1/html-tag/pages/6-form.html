@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="app">
+    <div class="wrap">
+        <div class="explain card">
+            <div class="title">input 태그</div>
+            <p>사용자로부터 입력을 받을 수 있는 입력 필드(input filed)를 정의할 때 사용.</p>
+            <p class="mb-20px">type 속성 값을 달리하여 여러가지 모양을 나타낼 수 있음.
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN 링크</a>
+            </p>
+
+            <p><code>type="text"</code></p>
+            <p><code>type="password"</code></p>
+            <p><code>type="file"</code></p>
+            <p><code>type="button"</code></p>
+            <p><code>type="submit"</code></p>
+            <p><code>type="checkbox"</code></p>
+            <p><code>type="radio"</code></p>
+            <p><code>type="search"</code></p>
+            <p>※ input type의 종류는 굉장히 많지만 <strong>쓰는 속성은 몇 개 안됨</strong>.</p>
+        </div>
+        <div class="explain card">
+            <div class="title">label 태그</div>
+            <p class="mb-20px">input의 라벨 역할.</p>
+
+            <p>문법 : <code>&lt;label for="input-id"&gt;라벨이름&lt;/label&gt;</code></p>
+            <p>라벨의 for 속성과 input의 id를 연결해 사용.</p>
+        </div>
+        <div class="explain card">
+            <div class="title">textarea 태그</div>
+            <p>여러 줄의 텍스트를 입력할 수 있는 영역.</p>
+            <p>input:text의 확장판이라고 생각하면 됨.</p>
+            <p>우하단을 드래그해 입력 공간을 넓힐 수 있는 특징이 있음.</p>
+        </div>
+        <div class="explain card">
+            <div class="title">select 태그</div>
+            <p>드롭다운 리스트를 구성하는 태그.</p>
+            <p>input:text의 확장판이라고 생각하면 됨.</p>
+            <p>우하단을 드래그해 입력 공간을 넓힐 수 있는 특징이 있음.</p>
+
+            <p><code>&lt;select name="" id=""&gt;</code></p>
+            <p><code>&nbsp;&lt;option value=""&gt;text&lt;/option&gt;</code></p>
+            <p><code>&lt;/select&gt;</code></p>
+        </div>
+        <div class="explain card">
+            <div class="title">button 태그</div>
+            <p class="mb-20px">클릭 가능한 버튼을 나타내는 태그.</p>
+            <p><code>type="submit"</code></p>
+            <p>ㄴ 버튼이 서버로 양식을 제출함. <strong>기본값</strong></p>
+            <p><code>type="reset"</code></p>
+            <p>ㄴ <code>&lt;input type="reset"&gt;</code>와 같이 모든 입력을 초기화 함.</p>
+            <p><code>type="button"</code></p>
+            <p>ㄴ 기본 행동이 없으며 눌렀을 때 아무런 반응을 하지 않음.</p>
+            <p>ㄴ 스크립트에서 기능을 넣어줄 수 있으며, <strong>우리가 버튼을 대부분 이 용도로 사용함.</strong></p>
+        </div>
+
+        <div class="router card">
+            <a href="../index.html">텍스트 >></a>
+            <a href="1-layout.html">레이아웃 >></a>
+            <a href="2-link.html">링크 >></a>
+            <a href="3-image.html">이미지 >></a>
+            <a href="4-video.html">비디오 >></a>
+            <a href="5-audio.html">오디오 >></a>
+            <a href="6-form.html">폼 >></a>
+            <a href="7-etc.html">기타 >></a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="example card">
+            <div class="title">input 태그 연습</div>
+            <div>
+                <p>각 타입의 input을 만들어보고 해당 타입이 요구하는대로 속성 및 태그 구성해보기.</p>
+                <p class="mb-20px"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Input 문서</a> 내 각 타입 참고</p>
+
+                <!-- 여기서 작업 -->
+            </div>
+        </div>
+        <div class="example card">
+            <div class="title">label 태그 연습</div>
+            <div>
+                <p class="mb-20px">위 input에서 만든 예제에 label을 추가해보기</p>
+
+                <!-- 여기서 작업-->
+            </div>
+        </div>
+        <div class="example card">
+            <div class="title">textarea 연습</div>
+            <div>
+                <p>여기서 textarea를 만들어보기</p>
+                <p class="mb-20px">기본도 만들어보고, 속성에 <code>cols</code>와 <code>rows</code> 속성으로 크기 조절해보기</p>
+            </div>
+        </div>
+        <div class="example card">
+            <div class="title">select 연습</div>
+            <div>
+                <p class="mb-20px">아래 select 안에 option을 넣어 드롭박스 만들어보기</p>
+
+                <select name="pop-song" id="pop-song-select">
+                    <option value="">옵션을 선택해주세요.</option>
+                    <!-- 여기에 option 추가-->
+                    <!-- 문법: <option value="title">Title</option>>-->
+                </select>
+            </div>
+        </div>
+        <div class="example card">
+            <div class="title">button 연습</div>
+            <div>
+                <p>아래에 3 종류의 버튼을 만들어봅니다.</p>
+                <p class="mb-20px">버튼의 이름은 각각 '제출', '초기화', '버튼'으로 합니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

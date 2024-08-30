@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap'); /* reset */
+
+/* reset */
+body, html, p, span, ul, li, dl, dt, div, img {
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+}
+
+/* fonts */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffece0;
+}
+
+code {
+    background-color: #eee;
+    color: #e35d5d;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*gap: 20px;*/
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 15px 20px 15px;
+}
+
+.wrap::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+.wrap::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+}
+.wrap::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+}
+.wrap::-webkit-scrollbar-track {
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.explain {
+    width: 400px;
+}
+
+.router {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-color: #FDDFCB;
+    background-color: #FFFAF7;
+}
+
+.example {
+    width: 620px;
+}
+.box-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 5px;
+    gap: 10px;
+}
+.box-item {
+    width: 300px;
+    height: 250px;
+    border: 1px solid orange;
+}
+
+.box-item.sea-green {
+    border-color: lightseagreen;
+}
+
+.box-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}

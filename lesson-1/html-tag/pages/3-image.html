@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="app">
+  <div class="wrap">
+    <div class="explain card">
+      <div class="title">img 태그</div>
+      <p>가장 기본적은 이미지를 만드는 태그</p>
+      <p class="mb-20px">이미지 태그는 인라인 요소입니다.</p>
+      <p>문법 : <code>&lt;img href="" alt=""&gt;</code></p>
+      <p>src : 이미지 파일 주소</p>
+      <p>alt : 이미지 로딩 실패 시(엑박) 보여줄 대체 텍스트</p>
+      <p>title : 로딩된 이미지에 hover 시 보여줄 텍스트</p>
+      <p>width</p>
+      <p>height</p>
+    </div>
+    <div class="explain card">
+      <div class="title">picture 태그</div>
+      <p>HTML5에 새롭게 등장한 다중(반응형) 이미지 태그.</p>
+      <p>이 태그는 여러 개의 소스 태그(선택)와 이미지 태그(필수)로 구성됩니다.</p>
+      <p>브라우저에서 각 조건을 체크한 후 부합하는 첫번째 조건의 이미지를 표시합니다.</p>
+      <p>모든 조건에 부합하지 않는다면 마지막의 이미지 태그를 사용합니다.</p>
+      <p class="mb-20px">픽처 및 소스 태그는 인라인 요소입니다.</p>
+      <p>문법</p>
+      <code>&lt;picture&gt;</code><br>
+      <code>&nbsp;&nbsp;&lt;source media="" srcset=""&gt;</code><br>
+      <code>&nbsp;&nbsp;&lt;source media="" srcset=""&gt;</code><br>
+      <code>&nbsp;&nbsp;&lt;img src="" alt=""&gt;</code><br>
+      <code>&lt;/picture&gt;</code>
+      <p><code>&lt;picture&gt;</code> : 이미지를 감싸는 태그. 내부에 소스와 이미지 태그 포함.</p>
+      <p><code>&lt;source&gt;</code> : 반응형으로 적용할 이미지. 내부에 조건과 이미지를 표시.</p>
+      <p>media : 조건. 주로 화면 크기를 설정함</p>
+      <p>srcset : 이미지의 주소. img 태그의 src 속성과 같음.</p>
+    </div>
+    <div class="router card">
+      <a href="../index.html">텍스트 >></a>
+      <a href="1-layout.html">레이아웃 >></a>
+      <a href="2-link.html">링크 >></a>
+      <a href="3-image.html">이미지 >></a>
+      <a href="4-video.html">비디오 >></a>
+      <a href="5-audio.html">오디오 >></a>
+      <a href="6-form.html">폼 >></a>
+      <a href="7-etc.html">기타 >></a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="example card">
+      <div class="title">이미지 연습</div>
+      <div>
+        <p class="mb-20px">각 설명에 맞게 이미지를 구성해보세요.</p>
+        <p>여기엔 각 옵션을 설정</p>
+        <img src="../images/img-480.jpg" alt="">
+        <p>엑박 상황에선 어떻게 보이는지?</p>
+        <img src="../images/img-240.jpg" width="100" height="100" alt="">
+      </div>
+    </div>
+    <div class="example card">
+      <div class="title">픽처 태그 연습</div>
+      <div>
+        <p>조건 1 - 현재 브라우저의 크기가 1200 이상일 땐 img-640.jpg 적용</p>
+        <p>조건 2 - 현재 브라우저의 크기가 1000 이상일 땐 img-480.jpg 적용</p>
+        <p>조건 3 - 그 외의 상황엔 img-320.jpg 적용</p>
+        <p><code>media="(min-width: 768px)</code> : 화면의 크기가 768px 초과일 때</p>
+        <p class="mb-20px"><code>media="(max-width: 769px)</code> : 화면의 크기가 769px 미만일 때</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
