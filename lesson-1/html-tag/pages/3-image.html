@@ -54,9 +54,9 @@
       <div>
         <p class="mb-20px">각 설명에 맞게 이미지를 구성해보세요.</p>
         <p>여기엔 각 옵션을 설정</p>
-        <img src="../images/img-480.jpg" alt="">
+        <img src="../images/img-480.jpg" alt="갈대밭 이미지입니다" title="핑크뮬리" width="100%">
         <p>엑박 상황에선 어떻게 보이는지?</p>
-        <img src="../images/img-240.jpg" width="100" height="100" alt="">
+        <img src="../images/img-240.jpg" width="100" height="100" alt="위 이미지와 같은 사진입니다">
       </div>
     </div>
     <div class="example card">
@@ -67,6 +67,12 @@
         <p>조건 3 - 그 외의 상황엔 img-320.jpg 적용</p>
         <p><code>media="(min-width: 768px)</code> : 화면의 크기가 768px 초과일 때</p>
         <p class="mb-20px"><code>media="(max-width: 769px)</code> : 화면의 크기가 769px 미만일 때</p>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../images/img-640.jpg">
+          <source media="(min-width: 1000px)" srcset="../images/img-480.jpg">
+          <img src="../images/img-320.jpg" alt="">
+        </picture>
       </div>
     </div>
   </div>

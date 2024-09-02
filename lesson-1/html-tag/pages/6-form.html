@@ -77,6 +77,18 @@
             <div>
                 <p>각 타입의 input을 만들어보고 해당 타입이 요구하는대로 속성 및 태그 구성해보기.</p>
                 <p class="mb-20px"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Input 문서</a> 내 각 타입 참고</p>
+                <div style="display: flex; flex-direction: column; padding :40px; gap: 8px; height: 150px; overflow: scroll">
+                    <input type="text">
+                    <input type="password">
+                    <input type="file">
+                    <input type="button">
+                    <input type="submit">
+                    <input type="checkbox">
+                    <input type="radio">
+                    <input type="search">
+                </div>
+
+                
 
                 <!-- 여기서 작업 -->
             </div>
@@ -86,7 +98,48 @@
             <div>
                 <p class="mb-20px">위 input에서 만든 예제에 label을 추가해보기</p>
 
-                <!-- 여기서 작업-->
+
+                <div style="display: flex; width: 250px; flex-direction: column; gap: 8px;">
+                    <div>
+                        <label for="input-text">이름</label>
+                        <input id="input-text" type="text">
+                    </div>
+                    <div>
+                        <label for="input-password">전화번호</label>
+                        <input id="input-password" type="password">
+                    </div>
+                    <div>
+                        <label for="input-file">첨부파일</label>
+                        <input id="input-file" type="file">
+                    </div>
+                    <div>
+                        <label for="input-submit">제출하시오</label>
+                        <input id="input-submit" type="submit">
+                    </div>
+                    <div>
+                        <label for="input-button">버튼</label>
+                        <input id="input-button" type="button">
+                    </div>
+                    <div>
+                        <p>강아지</p>
+                        <label for="input-checkbox-1">키웁니다</label>
+                        <input id="input-checkbox-1" type="checkbox">
+                        <br>
+                        <label for="input-checkbox-2">안키웁니다</label>
+                        <input id="input-checkbox-2" type="checkbox">
+                    </div>
+                    <div>
+                        <label for="input-radio-1">라디오버튼 1</label>
+                        <input id="input-radio-1" name="radio-test" type="radio" checked>
+                        <br>
+                        <label for="input-radio-2">라디오버튼 2</label>
+                        <input id="input-radio-2" name="radio-test" type="radio">
+                    </div>
+                    <div>
+                        <label for="input-search">장소</label>
+                        <input id="input-search" type="search">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="example card">
@@ -94,6 +147,9 @@
             <div>
                 <p>여기서 textarea를 만들어보기</p>
                 <p class="mb-20px">기본도 만들어보고, 속성에 <code>cols</code>와 <code>rows</code> 속성으로 크기 조절해보기</p>
+                <label for="textarea">주관식 정답</label>
+                <br>
+                <textarea id="textarea"></textarea>
             </div>
         </div>
         <div class="example card">
@@ -103,6 +159,11 @@
 
                 <select name="pop-song" id="pop-song-select">
                     <option value="">옵션을 선택해주세요.</option>
+                    <option value="">모동숲 주민대표</option>
+                    <option value="">모동숲 토끼주민</option>
+                    <option value="">모동숲 강아지주민</option>
+                    <option value="">모동숲 고양이주민</option>
+                    <option value="">모동숲 독수리주민</option>
                     <!-- 여기에 option 추가-->
                     <!-- 문법: <option value="title">Title</option>>-->
                 </select>
@@ -113,6 +174,10 @@
             <div>
                 <p>아래에 3 종류의 버튼을 만들어봅니다.</p>
                 <p class="mb-20px">버튼의 이름은 각각 '제출', '초기화', '버튼'으로 합니다.</p>
+
+                <button>제출</button>
+                <button>초기화</button>
+                <button>버튼</button>
             </div>
         </div>
     </div>
