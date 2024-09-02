@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usagi</title>
+    <link rel="stylesheet" href="usagi_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- 구글 머터리얼 아이콘 로드 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+<!-- 사이드 네비게이션 바 -->
+<div class="sidenav">
+    <a href="./index.html"><i class="material-icons">home</i> layout</a>
+    <a href="#services"><i class="material-icons">build</i> Services</a>
+    <a href="#clients"><i class="material-icons">people</i> Clients</a>
+    <a href="#contact"><i class="material-icons">contact_mail</i> Contact</a>
+</div>
+
+<header class="header">
+    <div class="header-content" style="height: 80px;">
+        <div class="logo">
+            <a href="#home">My Website</a>
+        </div>
+        <nav class="header-nav">
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div id="app" data-v-app="">
+    <div class="sample-box"
+         style="background-color: rgba(0,0,0,0.38); display: flex; align-items: center; flex-direction: column; padding: 8px; color: white"
+    <strong>여긴 깃 연습을 할 부분입니다.</strong>
+    <small>이 div 내에서 수정을 한 뒤 충돌을 해결하는게 핵심입니다.</small>
+</div>
+<div>
+    <a href="https://vitejs.dev" target="_blank">
+        <img src="./public/vite.svg" height: 80px;
+             class="logo"
+             alt="Vite logo"></a>
+    <a href="https://vuejs.org/"
+       target="_blank">
+        <img src="./src/assets/vue.svg"
+             class="logo vue" alt="Vue logo">
+    </a>
+</div>
+<div class="example" style="padding: 10px; border-radius: 5px; border: 2px solid skyblue">
+    <div class="default-skill">
+        <p>앞으로 아시면 좋은 스킬들은</p>
+        <p>바로바로</p>
+        <picture>
+            <source media="(min-width: 700px)" srcset="imgs/usagi.PNG" height="150">
+            <source media="(min-width: 400px)" srcset="imgs/usagi.PNG" height="80">
+            <a href="https://www.notion.so/1-8-30-1dc716399769414ba93c640c4b3125a6">
+                <img src="imgs/usagi.PNG" height="250" alt="우사기" title="우사기입니다">
+            </a>
+        </picture>
+        <br>
+        <iframe allow="autoplay;" autoplay=1 allowfullscreen frameborder="0"
+                height="250" width="495"
+                referrerpolicy="strict-origin-when-cross-origin"
+                src="https://www.youtube.com/embed/izAcb6uogqY?si=gkUpfcscUkMPZ5CU"
+                title="YouTube video player">
+        </iframe>
+        <br>
+        <br>
+        <video controls width="495" autoplay="autoplay" muted="muted" loop="1">
+            <source src="./vedio/number1.mp4" type="video/mp4">
+
+
+        </video>
+        <vedio> <src="vedio/number1.mp4" autoplay;></src>
+        </vedio>
+        <br>
+        <br>
+        <span style="color: blue">HTML5</span>
+
+
+
+        <span style="color: orangered">CSS3</span>
+        <span style="color: #a5a501">JavaScript</span>
+    </div>
+    <div class="fe-skill">
+        <p>그리고 추가적으로</p>
+        <span style="color: hotpink">SCSS</span>
+        <p>와 프론트엔드 기술들</p>
+        <span style="color: green">VUE.JS</span>
+        <span style="color: lightskyblue">React</span>
+        <p>를 아시면 좋습니다.</p>
+    </div>
+    <br><br><br>
+    <label for="pet-select">그리고 나의 모동숲 최애 주민은?</label>
+    <br><br>
+    <select name="pets" id="pet-select">
+        <option value="">주민을 선택하세요</option>
+
+        <optgroup label="강아지 주민"> <!-- 선택목록 그룹 -->
+            <option value="dog">여울</option>
+            <option value="cat">럭키</option>
+        </optgroup>
+
+        <optgroup label="다람쥐 주민">
+            <option value="parrot">쭈니</option>
+            <option value="parrot">다람</option>
+            <option value="parrot">레베카</option>
+        </optgroup>
+
+        <optgroup label="토끼 주민">
+            <option value="goldfish">미첼</option>
+            <option value="spider">스피카</option>
+        </optgroup>
+    </select>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th></th>
+                <th>강아지 주민</th>
+                <th>다람쥐 주민</th>
+                <th>토끼 주민</th>
+            </tr>
+            <tr>
+                <td>1위</td>
+                <td>여울</td>
+                <td>쭈니</td>
+                <td>미첼</td>
+            </tr>
+            <tr>
+                <td>2위</td>
+                <td>럭키</td>
+                <td>다람</td>
+                <td>크리스틴</td>
+            </tr>
+            <tr>
+                <td>3위</td>
+                <td>바닐라</td>
+                <td>레베카</td>
+                <td>토시</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>
