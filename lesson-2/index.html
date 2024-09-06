@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Lesson 02 모동숲 페이지</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 </head>
 <div>
 
@@ -15,47 +16,65 @@
             <div class="autolayout-between">
                 <article class="logo">
                     <a href="https://www.emotioncastle.com/" target="_blank">
-                        <img src="./images/logo-1.png" height="90px;" alt="">
+                        <img src="./images/logo-1.png" height="50px;" alt="">
                     </a>
                 </article>
                 <article class="navi">
-                    <a href="https://www.nintendo.co.kr/switch/acbaa/index.html" target="_blank">
-                        <img src="./images/logo-2.png" height="60px;" alt="">
+
+
+                    <a href="#cat" target="_self" class="scroll">
+                        <div class="autolayout-row-4">
+                            <img src="./images/ico_cat.png" width="24"><p></p>
+                        </div>
                     </a>
-                    <a href="https://www.nintendo.co.kr/switch/av5ja/index.html" target="_blank">
-                        <img src="./images/logo-3.png" height="60px;" alt="">
+                    <a href="#rabbit" target="_self">
+                        <div class="autolayout-row-4">
+                            <img src="./images/ico_rabbit.png" width="24"><p></p>
+                        </div>
                     </a>
-                    <a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">
-                        <img src="./images/logo-4.png" height="60px;" alt="">
+                    <a href="#daram" target="_self">
+                        <div class="autolayout-row-4">
+                            <img src="./images/ico_daram.png" width="24"><p></p>
+                        </div>
                     </a>
+
+<!--                    <a href="https://www.nintendo.co.kr/switch/acbaa/index.html" target="_blank">-->
+<!--                        <img src="./images/logo-2.png" height="40px;" alt="">-->
+<!--                    </a>-->
+<!--                    <a href="https://www.nintendo.co.kr/switch/av5ja/index.html" target="_blank">-->
+<!--                        <img src="./images/logo-3.png" height="40px;" alt="">-->
+<!--                    </a>-->
+<!--                    <a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">-->
+<!--                        <img src="./images/logo-4.png" height="40px;" alt="">-->
+<!--                    </a>-->
                 </article>
             </div>
 
-                    <div class="autolayout-between">
-                        <article class="header-article">
-                            <a href="https://www.nintendo.co.kr/switch/acbaa/index.html" target="_blank">
-                                <div class="autolayout-row-4">
-                                    <img src="./images/ico_cat.png" width="24"><p>고양이주민</p>
-                                </div>
-                            </a>
-                            <a href="https://www.nintendo.co.kr/switch/av5ja/index.html" target="_blank">
-                                <div class="autolayout-row-4">
-                                    <img src="./images/ico_rabbit.png" width="24"><p>토끼주민</p>
-                                </div>
-                            </a>
-                            <a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">
-                                <div class="autolayout-row-4">
-                                    <img src="./images/ico_daram.png" width="24"><p>다람쥐주민</p>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
+<!--                    <div class="autolayout-between">-->
+<!--                        <article class="header-article">-->
+<!--                            <a href="https://www.nintendo.co.kr/switch/acbaa/index.html" target="_blank">-->
+<!--                                <div class="autolayout-row-4">-->
+<!--                                    <img src="./images/ico_cat.png" width="24"><p></p>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                            <a href="https://www.nintendo.co.kr/switch/av5ja/index.html" target="_blank">-->
+<!--                                <div class="autolayout-row-4">-->
+<!--                                    <img src="./images/ico_rabbit.png" width="24"><p></p>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                            <a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">-->
+<!--                                <div class="autolayout-row-4">-->
+<!--                                    <img src="./images/ico_daram.png" width="24"><p></p>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </article>-->
+<!--                    </div>-->
         </header>
 
-        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
         <aside class="sidebar">
             <nav>
-                <div class="autolayout-16">
+                <div class="autolayout-snb">
                     <ul>
                         <li><a href="https://www.nintendo.co.kr/switch/acbaa/index.html">
                             고양이</a></li>
@@ -71,10 +90,13 @@
                 </div>
             </nav>
         </aside>
-        <div class="autolayout-62">
 
+        <div class="autolayout-62">
             <div class="autolayout-16">
-                <h2>고양이 주민</h2>
+                <div class="autolayout-row-bt-8">
+                <h2 id="cat">고양이 주민</h2>
+                <h4>귀여워요</h4>
+                </div>
                 <div class="container">
                     <section class="box1">
                         <div class="autolayout-4">
@@ -117,8 +139,23 @@
                 </section>
             </div>
 
+            <div class="autolayout-space-around">
+                <div class="banner">
+                    <img class="banner-img" src="./images/banner-1.png">
+                </div>
+                <div class="banner">
+                    <img class="banner-img" src="./images/banner-2.png">
+                </div>
+                <div class="banner">
+                    <img class="banner-img" src="./images/banner-3.png">
+                </div>
+            </div>
+
             <div class="autolayout-16">
-                <h2>토끼 주민</h2>
+                <div class="autolayout-row-bt-8">
+                    <h2 id="rabbit">토끼 주민</h2>
+                    <h4>사랑스러워요</h4>
+                </div>
                 <div class="container">
                     <section class="box2">
                         <div class="autolayout-4">
@@ -154,7 +191,10 @@
             </div>
 
             <div class="autolayout-16">
-                <h2>다람쥐 주민</h2>
+                <div class="autolayout-row-bt-8">
+                    <h2 id="daram">다람쥐 주민</h2>
+                    <h4>친절해요</h4>
+                </div>
                 <div class="container">
                     <section class="box3">
                         <div class="autolayout-4">
@@ -194,12 +234,16 @@
                 </section>
             </div>
 
-            <footer>footer</footer>
-
         </div>
     </div>
 </div>
 </div>
 </div>
 </body>
+
+<footer>
+    <!--<img class="footer" src="./images/bg-1.jpg">-->
+    <img class="footer-full" src="./images/bg-4.png">
+</footer>
+
 </html>
