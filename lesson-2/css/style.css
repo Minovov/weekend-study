@@ -215,7 +215,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 16;
+    width: 1200px;
     justify-content: flex-start;
     /*background-color: yellowgreen;*/
 }
