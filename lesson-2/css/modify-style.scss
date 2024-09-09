@@ -1,6 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: image("../images/bg-1.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: rgba(142, 200, 160, 0.12);
+  background-image: image("../images/bg-1.jpg");
 }
 
 li {
@@ -38,8 +49,8 @@ header {
 
       a {
         display: inline-block;
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
 
         img {
           width: 100%;
@@ -118,7 +129,7 @@ section {
   width: 100%;
   display: flex;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 80px;
 
   .banner-item {
     width: 380px;
@@ -155,24 +166,31 @@ section {
 
 .floating-btn-wrap {
   position: fixed;
-  right: 100px;
-  bottom: 140px;
+  right: 80px;
+  bottom: 60px;
   display: flex;
-  gap: 10px;
+  gap: 30px;
 
   .floating-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
     cursor: pointer;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    background-image: url("../images/naver-sprites.png");
+    background-color: #e6fd4b;
+    //background-image: url("../images/naver-sprites.png");
 
     &.setting-btn {
-      background-position: -145px -812px;
+      background-image: url("../images/ico_prev.png");
+      background-size: 60px 60px;
+      background-position: 0px 0px;
     }
+
     &.info-btn {
-      background-position: -52px -812px;}
+      background-image: url("../images/ico_next.png");
+      background-size: 60px 60px;
+      background-position: 0px 0px;
+    }
   }
 }
 
