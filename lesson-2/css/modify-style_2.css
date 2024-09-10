@@ -65,13 +65,10 @@ aside {
   position: fixed;
   padding: 16px;
   top: 40%;
-  left: 20px;
-  border-radius: 8px;
-  background-color: #000000;
-  border: 1px solid #999999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  left: 30px;
 }
 aside .nav-list {
+  width: 80px;
   display: flex;
   flex-direction: column;
   gap: 8px;
