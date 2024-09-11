@@ -5,7 +5,6 @@
   font-optical-sizing: auto;
   font-style: normal;
   color: #fff;
-  background-image: image("../images/bg-1.jpg");
   background-repeat: repeat;
   background-size: cover;
 }
@@ -61,14 +60,14 @@ header .header-inner .icon-wrap a img {
 }
 
 aside {
-  width: 120px;
+  width: 80px;
   position: fixed;
   padding: 16px;
   top: 40%;
   left: 30px;
 }
 aside .nav-list {
-  width: 80px;
+  width: 60px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -97,13 +96,79 @@ section .resident-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 0px;
+  gap: 0px;
+}
+section .resident-list .resident-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
 }
 section .resident-list .resident-item img {
   width: 240px;
   height: 240px;
   object-fit: scale-down;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+section .resident-list .resident-item .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+section .resident-list .resident-item:hover img {
+  filter: brightness(20%);
+}
+section .resident-list .resident-item:hover .text-overlay {
+  opacity: 1;
 }
 section .resident-list .resident-item p {
+  text-align: center;
+  margin-top: 0px;
+}
+
+section {
+  padding-top: 80px;
+}
+section .title-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+section .characters-list {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0px;
+  gap: 0px;
+}
+section .characters-list .characters-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+section .characters-list .characters-item img {
+  width: 240px;
+  height: 240px;
+  object-fit: scale-down;
+  transition: all 0.3s ease-out;
+  transform-origin: top center;
+}
+section .characters-list .characters-item:hover img {
+  animation: swing 1s ease-in-out;
+}
+section .characters-list .characters-item:hover .text-overlay {
+  opacity: 1;
+}
+section .characters-list .characters-item p {
   text-align: center;
   margin-top: 0px;
 }
@@ -115,8 +180,8 @@ section .resident-list .resident-item p {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -186,6 +251,24 @@ footer {
   height: 200px;
   margin-top: 80px;
   background-image: url("../images/download 2.png");
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=modify-style_2.css.map */
