@@ -24,8 +24,8 @@ body::before {
   background-size: auto;
   background-position: auto;
   background-repeat: repeat;
-  opacity: 0.35;
-  z-index: -1;
+  opacity: 0.2;
+  z-index: 30;
 }
 
 li {
@@ -76,10 +76,10 @@ aside {
   padding: 16px;
   top: 40%;
   left: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #999999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-image: url("../images/snb_animalcrossing.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 aside .nav-list {
   display: flex;

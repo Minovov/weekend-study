@@ -5,8 +5,6 @@
   font-optical-sizing: auto;
   font-style: normal;
   color: #fff;
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 body {
@@ -97,6 +95,7 @@ section .resident-list {
   flex-wrap: wrap;
   row-gap: 0px;
   gap: 0px;
+  cursor: pointer;
 }
 section .resident-list .resident-item {
   position: relative;
@@ -104,6 +103,7 @@ section .resident-list .resident-item {
   margin: 0;
 }
 section .resident-list .resident-item img {
+  display: block;
   width: 240px;
   height: 240px;
   object-fit: scale-down;
@@ -112,9 +112,12 @@ section .resident-list .resident-item img {
 }
 section .resident-list .resident-item .text-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  align-content: center;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -152,7 +155,7 @@ section .characters-list {
 }
 section .characters-list .characters-item {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   margin: 0;
 }
 section .characters-list .characters-item img {
@@ -161,9 +164,11 @@ section .characters-list .characters-item img {
   object-fit: scale-down;
   transition: all 0.3s ease-out;
   transform-origin: top center;
+  z-index: 10;
 }
 section .characters-list .characters-item:hover img {
   animation: swing 1s ease-in-out;
+  z-index: 100;
 }
 section .characters-list .characters-item:hover .text-overlay {
   opacity: 1;
@@ -261,10 +266,10 @@ footer {
     transform: rotate(15deg);
   }
   50% {
-    transform: rotate(0deg);
+    transform: rotate(-15deg);
   }
   75% {
-    transform: rotate(-15deg);
+    transform: rotate(12deg);
   }
   100% {
     transform: rotate(0deg);
