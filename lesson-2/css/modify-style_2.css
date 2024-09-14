@@ -11,7 +11,6 @@ body {
   background-color: rgb(0, 0, 0);
   background-image: url("../images/download 2.png");
   background-size: auto;
-  background-position: auto;
   background-repeat: repeat;
 }
 
@@ -72,6 +71,7 @@ aside .nav-list {
 }
 aside .nav-list .nav-item a {
   text-decoration: none;
+  display: inline-block;
 }
 
 main {
@@ -90,11 +90,11 @@ section .title-wrap {
 }
 section .resident-list {
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 0px;
-  gap: 0px;
+  row-gap: 0;
+  gap: 0;
   cursor: pointer;
 }
 section .resident-list .resident-item {
@@ -133,7 +133,7 @@ section .resident-list .resident-item:hover .text-overlay {
 }
 section .resident-list .resident-item p {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 section {
@@ -147,11 +147,11 @@ section .title-wrap {
 }
 section .characters-list {
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 0px;
-  gap: 0px;
+  row-gap: 0;
+  gap: 0;
 }
 section .characters-list .characters-item {
   position: relative;
@@ -175,7 +175,7 @@ section .characters-list .characters-item:hover .text-overlay {
 }
 section .characters-list .characters-item p {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .banner {
@@ -193,7 +193,6 @@ section .characters-list .characters-item p {
 }
 .banner .banner-item {
   width: 100%;
-  height: 180px;
   position: relative;
 }
 .banner .banner-item .banner-bg {
@@ -243,12 +242,12 @@ section .characters-list .characters-item p {
 .floating-btn-wrap .floating-btn.setting-btn {
   background-image: url("../images/btn_prev.png");
   background-size: 60px 60px;
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 .floating-btn-wrap .floating-btn.info-btn {
   background-image: url("../images/btn_next.png");
   background-size: 60px 60px;
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 footer {
@@ -276,4 +275,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=modify-style_2.css.map */
+/*# sourceMappingURL=style.css.map */
