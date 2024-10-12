@@ -1,0 +1,54 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebebeb;
+}
+#app .content-wrap {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#app .content-wrap .content-item {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+#app .content-wrap .content-item .box-item {
+  padding: 20px;
+  margin: 20px;
+  background-color: #e8f2ff;
+  border-radius: 10px;
+}
+#app .content-wrap .content-item .box-item h3 {
+  font-style: inherit;
+}
+#app .content-wrap .content-item .box-item h3 .blue-color {
+  color: orange;
+}
+#app .content-wrap .content-item .box-item.violet-color h3 {
+  color: darkviolet;
+}
+#app .content-wrap .content-item .box-item.coral-color h3 {
+  color: black;
+}
+#app .content-wrap .content-item .box-item.skyblue-color h3 {
+  color: 0cf;
+  text-color: #0cf;
+}
+#app .content-wrap .content-item .box-item.twice-height span {
+  height: 2em;
+}
+
+.coral-color h3 {
+  color: lightcoral;
+}
+
+/*# sourceMappingURL=style.css.map */
