@@ -1,0 +1,165 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#app {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #ccc;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+#todo-app {
+  width: 375px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 32px rgba(70, 96, 135, 0.1);
+}
+#todo-app .title {
+  font-weight: 300;
+  color: #1b1a57;
+  margin-bottom: 20px;
+}
+#todo-app .input-wrap {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+#todo-app .input-wrap label {
+  flex: 1 1 0;
+}
+#todo-app .input-wrap label input#create-todo {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2F80ED;
+  padding: 4px 0;
+}
+#todo-app .input-wrap label input#create-todo:focus {
+  background-color: #eaf2fd;
+}
+#todo-app .input-wrap label input#create-todo::placeholder {
+  color: #AFAECB;
+}
+#todo-app .input-wrap button#create-todo-btn {
+  border: none;
+  padding: 4px 16px;
+  background-color: #2F80ED;
+  color: #fff;
+  font-weight: 100;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#todo-app .sub-title {
+  font-size: 12px;
+  color: #2a2879;
+  font-weight: 300;
+}
+#todo-app .contents-wrap {
+  margin-top: 30px;
+}
+#todo-app .contents-wrap .tab-list {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#todo-app .contents-wrap .tab-list .tab-item {
+  color: #99A6C0;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#todo-app .contents-wrap .tab-list .tab-item.selected {
+  color: #4F5E78;
+}
+#todo-app .contents-wrap .tab-list .date-btn {
+  margin-left: auto;
+  cursor: pointer;
+  fill: #99A6C0;
+  transition: fill 0.2s ease-in-out;
+}
+#todo-app .contents-wrap .tab-list .date-btn.active {
+  fill: #2F80ED;
+}
+#todo-app .contents-wrap .todo-list .todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+#todo-app .contents-wrap .todo-list .todo-item .toggle-btn {
+  width: 40px;
+  height: 16px;
+  border-radius: 12px;
+  color: #B9BFC9;
+  background-color: color-mix(in srgb, currentColor 30%, transparent);
+  position: relative;
+  cursor: pointer;
+  margin-right: 16px;
+}
+#todo-app .contents-wrap .todo-list .todo-item .toggle-btn .toggle-knob {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  background-color: currentColor;
+  transition: left 0.2s ease-in-out;
+}
+#todo-app .contents-wrap .todo-list .todo-item .todo-item-info {
+  font-size: 14px;
+  font-weight: 300;
+  flex: 1;
+}
+#todo-app .contents-wrap .todo-list .todo-item .todo-item-info .todo-item-text {
+  color: #2a2879;
+}
+#todo-app .contents-wrap .todo-list .todo-item .todo-item-info .todo-item-date {
+  display: none;
+  color: #2F80ED;
+}
+#todo-app .contents-wrap .todo-list .todo-item .delete-btn {
+  color: #FF5D5D;
+  border: 1px solid #FF5D5D;
+  background-color: #FFF4F4;
+  padding: 4px 16px;
+  border-radius: 4px;
+  visibility: hidden;
+}
+#todo-app .contents-wrap .todo-list .todo-item.completed .toggle-btn {
+  color: #2F80ED;
+}
+#todo-app .contents-wrap .todo-list .todo-item.completed .toggle-btn .toggle-knob {
+  left: 16px;
+}
+#todo-app .contents-wrap .todo-list .todo-item.completed .todo-item-text {
+  text-decoration: line-through;
+}
+#todo-app .contents-wrap .todo-list.show-date .todo-item .todo-item-info .todo-item-date {
+  display: block;
+}
+#todo-app .contents-wrap .todo-list.show-date .todo-item .delete-btn {
+  visibility: visible;
+}
+
+#todo-list.show-todo .todo-item.completed {
+  display: none;
+}
+#todo-list.show-completed .todo-item:not(.completed) {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

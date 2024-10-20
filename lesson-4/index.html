@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <div id="todo-app">
+        <h3 class="title">Create a new to do item.</h3>
+        <div class="input-wrap">
+            <label>
+                <input type="text" name="create-todo" id="create-todo" placeholder="What to do?" maxlength="15">
+            </label>
+            <button id="create-todo-btn">Create</button>
+        </div>
+        <span class="sub-title">
+            WhatTodoList surfaces the right tasks at the right times so you always know what to focus on next.
+        </span>
+        <div class="contents-wrap">
+            <div class="tab-list">
+                <div id="all-list-tab" class="tab-item selected">
+                    All ( <span id="all-list-count"></span> )
+                </div>
+                <div id="todo-list-tab" class="tab-item">
+                    Todo List ( <span id="todo-list-count"></span> )
+                </div>
+                <div id="completed-list-tab" class="tab-item">
+                    Completed ( <span id="completed-list-count"></span> )
+                </div>
+                <div id="date-btn" class="date-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM13.293 14.707L9 10.414V4H11V9.586L14.707 13.293L13.293 14.707Z"/>
+                    </svg>
+                </div>
+            </div>
+            <ul id="todo-list" class="todo-list">
+               <li class="todo-item">
+                   <div class="toggle-btn">
+                       <div class="toggle-knob"></div>
+                   </div>
+                   <div class="todo-item-info">
+                       <p class="todo-item-text">과제하기</p>
+                       <p class="todo-item-date">2024.01.01</p>
+                   </div>
+                   <button class="delete-btn">Delete</button>
+               </li>
+               <li class="todo-item completed">
+                   <div class="toggle-btn">
+                       <div class="toggle-knob"></div>
+                   </div>
+                   <div class="todo-item-info">
+                       <p class="todo-item-text">간식먹기</p>
+                       <p class="todo-item-date">2024.01.01</p>
+                   </div>
+                   <button class="delete-btn">Delete</button>
+               </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<template id="todo-item-template">
+    <li class="todo-item">
+        <div class="toggle-btn">
+            <div class="toggle-knob"></div>
+        </div>
+        <div class="todo-item-info">
+            <p class="todo-item-text"></p>
+            <p class="todo-item-date">2024.01.01</p>
+        </div>
+        <button class="delete-btn">Delete</button>
+    </li>
+</template>
+<script src="js/script.js"></script>
+</body>
+</html>
